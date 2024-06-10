@@ -1,7 +1,25 @@
-<div class="uppercase container mx-auto">
-  <p>Template by Ivan Moroz</p>
-  <p>〰 Angular 2+, Version CLI 18</p>
-  <p>✅ TailwindCSS</p>
-  <p>✅ Angular Material CDK Screen Layout</p> 
-  <img src="like.png" class="w-6 m-4"> 
+<div class="container mx-auto space-y-6">
+  <div>
+    <p>Template by Ivan Moroz</p>
+    <img src="like.png" class="w-6 m-4"> 
+    <p>〰 Angular 2+, Version CLI 18</p>
+    <p>✅ TailwindCSS</p>
+    <p>✅ Angular Material CDK Screen Layout <span class="text-sm font-bold">Current screen: {{_clientLayout.currentScreenSize}}</span></p> 
+    <p>✅ Angular Material CDK Platform**</p> 
+  </div>
+
+  <div>
+    <h2>Platform** information:</h2>
+    <p>Is Android: {{_clientPlatform.platform.ANDROID}}</p>
+    <p>Is iOS: {{_clientPlatform.platform.IOS}}</p>
+    <p>Is Firefox: {{_clientPlatform.platform.FIREFOX}}</p>
+    <p>Is Blink: {{_clientPlatform.platform.BLINK}}</p>
+    <p>Is Webkit: {{_clientPlatform.platform.WEBKIT}}</p>
+    <p>Is Trident: {{_clientPlatform.platform.TRIDENT}}</p>
+    <p>Is Edge: {{_clientPlatform.platform.EDGE}}</p>
+    <p>Is Safari: {{_clientPlatform.platform.SAFARI}}</p>
+    <p>Supported input types: {{_clientPlatform.supportedInputTypes}}</p>
+    <p>Supports passive event listeners: {{_clientPlatform.supportsPassiveEventListeners}}</p>
+    <p>Supports scroll behavior: {{_clientPlatform.supportsScrollBehavior}}</p>
+  </div>
 </div>
